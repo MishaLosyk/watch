@@ -1,0 +1,22 @@
+<div class="wr">
+
+<nav>
+  <ul>
+    <li [ngClass]="{underline:line}" (click)="resetLine(); line = true" class="link home"><a routerLink="/">Home</a></li>
+    <li [ngClass]="{underline:line2}" (click)="resetLine(); line2 = true" class="link about"><a routerLink="/about">About us</a></li>
+    <li [ngClass]="{underline:line3}" (click)="resetLine(); line3 = true" class="link contacts"><a routerLink="/contacts">Contact us</a></li>
+    <li (click)="resetLine()" class="get"><a routerLink="/app"><div class="logo"></div><div>What to Watch</div></a></li>
+  </ul>
+  <!-- <img src="assets/img/logo.svg" alt=""> -->
+
+
+</nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+</div>
+<!--<footer>-->
+  <!--<p class="copy">&copy; all rights reserved</p>-->
+<!--</footer>-->
