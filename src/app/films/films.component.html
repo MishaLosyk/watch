@@ -17,7 +17,7 @@
 
   </div>
 
-  <div *ngIf="fs.pages > 1" (click)="moreFilms(fs.memory); log(fs.memory)" class="pag">
+  <div *ngIf="fs.pages > 1 && fs.pageNum <= fs.pages+1" (click)="moreFilms(fs.memory); log(fs.memory)" class="pag">
     Show more
   </div>
 

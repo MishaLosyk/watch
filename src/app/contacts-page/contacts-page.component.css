@@ -17,21 +17,34 @@
 }
 
 
-a {
+.submit {
   color: #fff;
   display: block;
   text-decoration: none;
-  padding: 15px 30px;
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
   border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
   background-color: #19191C;
-  margin: 40px;
   text-align: center;
-
+  outline: none;
+  outline-offset: 0;
+  border: 0;
 }
 
+.submit:disabled {
+  background-color: rgba(0,0,0,0.2);
+}
 
-a:hover {
-  background-color: #19191C;
+.submit:enabled:hover {
+  opacity: .9;
+}
+
+.submit:disabled:hover {
+ cursor: default;
 }
 
 

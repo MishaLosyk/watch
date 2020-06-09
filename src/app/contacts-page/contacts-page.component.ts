@@ -1,4 +1,14 @@
 import {Component, Input} from '@angular/core';
+import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
+import {ErrorStateMatcher} from '@angular/material/core';
+import { AppComponent } from '../app.component';
+
+export class MyErrorStateMatcher implements ErrorStateMatcher {
+  isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
+    const isSubmitted = form && form.submitted;
+    return !!(control && control.invalid && (control.dirty || control.touched || isSubmitted));
+  }
+}
 
 @Component({
   selector: 'app-contacts-page',
@@ -6,18 +16,16 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./contacts-page.component.css']
 })
 export class ContactsPageComponent{
-  pageSizeOptions: any;
-  value: String;
-  constructor() {
-    this.pageSizeOptions = [2, 4, 5];
+  nameFormControl = new FormControl('', [Validators.required]);
+  areaFormControl = new FormControl('', [Validators.required]);
+  matcher = new MyErrorStateMatcher();
+
+
+  constructor(public appcom: AppComponent) {
+    
   }
 
-  test(e){
-    console.log(e);
-  }
-  focus(){
-    console.log('dsa')
-  }
+  log = function(par) {console.log(par)};
 
 
 }

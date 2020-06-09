@@ -39,7 +39,6 @@ input::-webkit-input-placeholder { color: #666666; }
 
 .pag {
   text-align: center;
-  margin-top: 20px;
   margin-bottom: 40px;
   display: block;
   cursor: pointer;
@@ -66,6 +65,7 @@ input::-webkit-input-placeholder { color: #666666; }
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 a {

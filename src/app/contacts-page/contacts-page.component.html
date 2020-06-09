@@ -6,15 +6,22 @@
 
     <form class="contact-form">
       <mat-form-field class="contact-full-width" color="accent">
-        <input matInput placeholder="Your name">
+        <input required matInput [formControl]='nameFormControl' [errorStateMatcher]="matcher" placeholder="Your name">
+        <mat-error *ngIf="nameFormControl.hasError('required')">
+          Name is <strong>required</strong>
+        </mat-error>
       </mat-form-field>
 
       <mat-form-field class="contact-full-width" color="accent">
-        <textarea matInput placeholder="Leave a comment"></textarea>
+        <textarea required [formControl]='areaFormControl' matInput placeholder="Leave a comment"></textarea>
+        <mat-error *ngIf="areaFormControl.hasError('required')">
+          Comment is <strong>required</strong>
+        </mat-error>
       </mat-form-field>
+      <input [disabled]='areaFormControl.invalid || nameFormControl.invalid' routerLink='/contacted'  class='submit' type="submit" value="Send" >
+
     </form>
 
-    <a href="">Send</a>
   </div>
 </div>
 
