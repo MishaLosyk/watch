@@ -23,7 +23,9 @@ input[type="search"] {
   font-size: 30px;
 }
 
-input::-webkit-input-placeholder { color: #666666; }
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
 
 .search-wr {
   position: relative;
@@ -35,6 +37,7 @@ input::-webkit-input-placeholder { color: #666666; }
   left: 18px;
 
 }
+
 
 
 .pag {
@@ -77,4 +80,18 @@ a {
 
 a:nth-child(3n) {
   margin-right: 0;
+}
+
+@media screen and (max-width: 900px) {
+
+  .wr {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .film-container {
+    display: block;
+  }
+
 }

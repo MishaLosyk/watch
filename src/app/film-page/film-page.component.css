@@ -123,5 +123,48 @@ p {
 }
 
 
+@media screen and (max-width: 900px){
 
+  a {
+
+    position: relative;
+    left: 0;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  article {
+    display: block;
+    padding: 15px;
+  }
+
+  .wrap {
+    width: 100%;
+    padding: 0 20px;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+
+  img {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .h1 {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  h1 {
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  article {
+    width: 100%;
+  }
+  
+
+}
 
