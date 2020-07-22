@@ -2,13 +2,13 @@
 
 <nav>
   <ul>
-    <li><a [ngClass]="{underline:line}" (click)="resetLine(); line = true" class="link home" routerLink="/home">Home</a></li>
-    <li><a [ngClass]="{underline:line2}" (click)="resetLine(); line2 = true" class="link about" routerLink="/about">About</a></li>
-    <li><a [ngClass]="{underline:line3}" (click)="resetLine(); line3 = true" class="link contacts" routerLink="/contacts">Contact</a></li>
-    <li (click)="resetLine()" class="get"><a routerLink="/tt0477348"><div class="logo"></div><div>What to Watch</div></a></li>
-    <li (click)="resetLine()" class="get-m"><a routerLink="/tt0477348"><div class="logo"></div><div></div></a></li>
+    <li><a class="link home" routerLink="/home" routerLinkActive='underline'>Home</a></li>
+    <li><a class="link about" routerLink="/about" routerLinkActive='underline'>About</a></li>
+    <li><a class="link contacts" routerLink="/contacts" routerLinkActive='underline'>Contact</a></li>
+    <li class="get"><a routerLink="/tt0477348"><div class="logo"></div><div>What to Watch</div></a></li>
+    <li class="get-m"><a routerLink="/tt0477348"><div class="logo"></div><div></div></a></li>
   </ul>
-  <!-- <img src="assets/img/logo.svg" alt=""> -->
+
 
 </nav>
 
@@ -17,6 +17,4 @@
 </main>
 
 </div>
-<!--<footer>-->
-  <!--<p class="copy">&copy; all rights reserved</p>-->
-<!--</footer>-->
+

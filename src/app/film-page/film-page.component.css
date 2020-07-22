@@ -50,6 +50,7 @@ article {
   position: relative;
   width: 60%;
   margin: auto;
+  margin-bottom: 40px;
   background-color: #202024;
   box-shadow: 0 3px 6px -3px rgba(0,0,0,0.2);
   border-radius: 5px;
@@ -69,17 +70,6 @@ img {
 
 }
 
-.rate-wr-box {
-  border: 2px solid #ddc5df;
-  margin-top: 15px;
-  margin-left: 10px;
-  padding: 7px 14px;
-  margin-right: 10px;
-  border-radius: 50px;
-  color: #38003c;
-  display: inline-block;
-
-}
 
 .rate-wr {
   margin-top: 15px;
@@ -90,6 +80,7 @@ img {
   color: #fff;
   display: inline-block;
 }
+
 .subtitle2 {
   font-size: 13px;
   line-height: 26px;
